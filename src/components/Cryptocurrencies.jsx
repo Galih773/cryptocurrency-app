@@ -33,6 +33,7 @@ const Cryptocurrencies = ({simplified}) => {
             <NavLink to={`/crypto/${currency.uuid}`}>
               <Card 
                 title={`${currency.rank}. ${currency.name}`}
+                // eslint-disable-next-line jsx-a11y/alt-text
                 extra={<img className="crypto-image" src={currency.iconUrl} />}
               >
                 <p>Price: {millify(currency.price)}</p>
